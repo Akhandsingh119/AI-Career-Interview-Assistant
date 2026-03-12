@@ -12,7 +12,7 @@ App.use(
 );
 App.use(express.json())
 App.use(cookieParser());
-App.use("/",async(req,res)=>{res.send("API is working")})
+
 App.use("/api/Auth",AuthRouter)
 App.use("/api/Interview",Interview)
 
