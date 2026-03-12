@@ -1,0 +1,220 @@
+{
+  "matchScore": 82,
+  "technicalQuestions": [
+    {
+      "technicalQuestion": "Explain the concept of Middleware in Express.js.",
+      "intention": "To assess understanding of request-response lifecycle in Node.js.",
+      "answer": "Middleware functions have access to request and response objects. They can execute code, modify objects, and end the cycle or call next().",
+      "_id": {
+        "$oid": "69b12c5326b474166cc7e88b"
+      }
+    },
+    {
+      "technicalQuestion": "What is the Virtual DOM in React and why is it used?",
+      "intention": "To evaluate knowledge of React's rendering efficiency.",
+      "answer": "It is a lightweight copy of the real DOM. React uses it to find specific changes via a diffing algorithm to update only necessary parts of the UI, improving performance.",
+      "_id": {
+        "$oid": "69b12c5326b474166cc7e88c"
+      }
+    },
+    {
+      "technicalQuestion": "How do you handle state management in a large-scale application?",
+      "intention": "To check experience with scalable architecture.",
+      "answer": "I prefer using Redux Toolkit for complex global state and React Context for lighter needs, ensuring a predictable data flow.",
+      "_id": {
+        "$oid": "69b12c5326b474166cc7e88d"
+      }
+    },
+    {
+      "technicalQuestion": "Explain the difference between horizontal and vertical scaling.",
+      "intention": "To assess cloud and infrastructure knowledge.",
+      "answer": "Vertical scaling adds power (CPU/RAM) to an existing machine; horizontal scaling adds more machines to the pool. I prefer horizontal for high availability.",
+      "_id": {
+        "$oid": "69b12c5326b474166cc7e88e"
+      }
+    },
+    {
+      "technicalQuestion": "How do you ensure data integrity in a NoSQL database?",
+      "intention": "To test database design philosophy.",
+      "answer": "By implementing schema validation at the application level (like Mongoose) and using atomic operations where possible.",
+      "_id": {
+        "$oid": "69b12c5326b474166cc7e88f"
+      }
+    }
+  ],
+  "behavioralQuestions": [
+    {
+      "behavioralQuestion": "Tell me about a time you had to learn a new technology quickly.",
+      "intention": "Assess adaptability and learning speed.",
+      "answer": "S: Project required GraphQL. T: Implement in 1 week. A: Took crash course, built a prototype, and integrated it. R: Feature delivered on time with zero bugs.",
+      "_id": {
+        "$oid": "69b12c5326b474166cc7e890"
+      }
+    },
+    {
+      "behavioralQuestion": "Describe a conflict you had with a peer and how you resolved it.",
+      "intention": "Assess communication and interpersonal skills.",
+      "answer": "S: Disagreement on code architecture. T: Reach a consensus. A: Held a whiteboard session to weigh pros/cons of both approaches objectively. R: Agreed on a hybrid approach.",
+      "_id": {
+        "$oid": "69b12c5326b474166cc7e891"
+      }
+    },
+    {
+      "behavioralQuestion": "How do you handle technical debt when facing tight deadlines?",
+      "intention": "Assess pragmatism and code quality standards.",
+      "answer": "S: Feature needed ASAP. T: Balance speed and quality. A: Used a 'good enough' approach but documented 'TODOs' in the backlog. R: Delivered on time and refactored later.",
+      "_id": {
+        "$oid": "69b12c5326b474166cc7e892"
+      }
+    },
+    {
+      "behavioralQuestion": "Tell me about a time you mentored a junior developer.",
+      "intention": "Assess leadership potential.",
+      "answer": "S: Junior struggling with Git. T: Help them become self-sufficient. A: Set up pair programming sessions and created a cheat sheet. R: Junior became proficient in 2 weeks.",
+      "_id": {
+        "$oid": "69b12c5326b474166cc7e893"
+      }
+    },
+    {
+      "behavioralQuestion": "Give an example of a mistake you made and what you learned.",
+      "intention": "Assess accountability and growth mindset.",
+      "answer": "S: Deleted a dev database by accident. T: Recovery. A: Restored from backup and implemented stricter access controls. R: Improved team safety protocols.",
+      "_id": {
+        "$oid": "69b12c5326b474166cc7e894"
+      }
+    }
+  ],
+  "skillGaps": [
+    {
+      "skill": "Cloud Infrastructure (AWS/Azure)",
+      "severity": "high",
+      "_id": {
+        "$oid": "69b12c5326b474166cc7e895"
+      }
+    },
+    {
+      "skill": "Unit Testing with Jest/Cypress",
+      "severity": "medium",
+      "_id": {
+        "$oid": "69b12c5326b474166cc7e896"
+      }
+    },
+    {
+      "skill": "Microservices Orchestration",
+      "severity": "medium",
+      "_id": {
+        "$oid": "69b12c5326b474166cc7e897"
+      }
+    },
+    {
+      "skill": "TypeScript Advanced Patterns",
+      "severity": "low",
+      "_id": {
+        "$oid": "69b12c5326b474166cc7e898"
+      }
+    },
+    {
+      "skill": "CI/CD Pipeline Configuration",
+      "severity": "low",
+      "_id": {
+        "$oid": "69b12c5326b474166cc7e899"
+      }
+    }
+  ],
+  "preparationPlan": [
+    {
+      "day": 1,
+      "focusArea": "Cloud Fundamentals",
+      "tasks": [
+        "Study AWS Lambda and S3",
+        "Understand VPC and Security Groups",
+        "Review Serverless architecture"
+      ],
+      "_id": {
+        "$oid": "69b12c5326b474166cc7e89a"
+      }
+    },
+    {
+      "day": 2,
+      "focusArea": "Testing Mastery",
+      "tasks": [
+        "Practice writing unit tests in Jest",
+        "Implement an E2E test with Cypress",
+        "Study TDD principles"
+      ],
+      "_id": {
+        "$oid": "69b12c5326b474166cc7e89b"
+      }
+    },
+    {
+      "day": 3,
+      "focusArea": "Advanced TypeScript",
+      "tasks": [
+        "Study Generics and Utility Types",
+        "Implement mapped types",
+        "Refactor a JS project to TS"
+      ],
+      "_id": {
+        "$oid": "69b12c5326b474166cc7e89c"
+      }
+    },
+    {
+      "day": 4,
+      "focusArea": "System Design",
+      "tasks": [
+        "Practice Designing a URL Shortener",
+        "Study Load Balancing strategies",
+        "Review Microservices communication patterns"
+      ],
+      "_id": {
+        "$oid": "69b12c5326b474166cc7e89d"
+      }
+    },
+    {
+      "day": 5,
+      "focusArea": "DevOps & CI/CD",
+      "tasks": [
+        "Configure a GitHub Action",
+        "Study Dockerizing multi-container apps",
+        "Review Kubernetes basics"
+      ],
+      "_id": {
+        "$oid": "69b12c5326b474166cc7e89e"
+      }
+    },
+    {
+      "day": 6,
+      "focusArea": "Performance Tuning",
+      "tasks": [
+        "Learn React.memo and useMemo",
+        "Practice Database Query optimization",
+        "Study Browser rendering bottlenecks"
+      ],
+      "_id": {
+        "$oid": "69b12c5326b474166cc7e89f"
+      }
+    },
+    {
+      "day": 7,
+      "focusArea": "Final Review",
+      "tasks": [
+        "Perform a mock technical interview",
+        "Review behavioral STAR responses",
+        "Re-read documentation on cloud gaps"
+      ],
+      "_id": {
+        "$oid": "69b12c5326b474166cc7e8a0"
+      }
+    }
+  ],
+  "user": {
+    "$oid": "69b125ff08a804dbaca19557"
+  },
+  "createdAt": {
+    "$date": "2026-03-11T08:48:19.287Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-11T08:48:19.287Z"
+  },
+  "__v": 0
+}

@@ -1,0 +1,144 @@
+{
+  "matchScore": 88,
+  "technicalQuestions": [
+    {
+      "technicalQuestion": "You mentioned reducing API response time by 40% using Redis. How did you handle cache invalidation?",
+      "intention": "To assess practical caching expertise and understanding of data consistency.",
+      "answer": "I implemented a TTL-based strategy for static data and used the Cache-Aside pattern. For real-time updates, I triggered manual invalidation upon database write operations to ensure users always saw the most recent data."
+    },
+    {
+      "technicalQuestion": "Explain how you would handle idempotency in a payment API.",
+      "intention": "Critical for the FinTech Senior Backend role.",
+      "answer": "I would use an Idempotency-Key in the request header. I'd store this key in Redis with a status of 'processing' or 'completed' to prevent duplicate transactions if the client retries a request."
+    },
+    {
+      "technicalQuestion": "How do you ensure high test coverage in a Node.js environment?",
+      "intention": "JD requires >80% test coverage; candidate claims 85% with Jest.",
+      "answer": "I use Jest for unit and integration tests, mocking external services like databases or third-party APIs using 'jest.mock'. I also integrate Istanbul/NYC to track coverage during CI/CD pipelines."
+    },
+    {
+      "technicalQuestion": "What are the pros and cons of using WebSockets vs. Long Polling for your ChatApp?",
+      "intention": "Assess knowledge of real-time communication protocols.",
+      "answer": "WebSockets provide full-duplex communication with lower overhead after the initial handshake, which is better for chat. Long polling consumes more server resources due to frequent HTTP overhead."
+    },
+    {
+      "technicalQuestion": "How would you secure sensitive financial data in a PostgreSQL database?",
+      "intention": "Assess security practices relevant to the FinTech JD.",
+      "answer": "I would use Column-Level Encryption for PII, ensure the database is in a private VPC, use SSL/TLS for connections, and implement strict RBAC (Role-Based Access Control)."
+    }
+  ],
+  "behavioralQuestions": [
+    {
+      "behavioralQuestion": "Tell me about a time you had to mentor a junior developer.",
+      "intention": "JD asks for the ability to mentor junior developers.",
+      "answer": "S: A junior struggled with async/await patterns. T: Improve their code quality. A: Conducted pair programming and detailed code reviews. R: They became self-sufficient in handling async logic within 2 weeks."
+    },
+    {
+      "behavioralQuestion": "Describe a high-pressure situation you faced at Infosys.",
+      "intention": "Assess resilience in a large-scale environment.",
+      "answer": "S: A production API serving 50k users started failing. T: Identify the bottleneck. A: Used monitoring tools to find an unindexed MongoDB query. R: Added the index and restored service in 30 minutes."
+    },
+    {
+      "behavioralQuestion": "How do you handle a situation where a product requirement is technically unfeasible in the given timeline?",
+      "intention": "Assess communication with product teams.",
+      "answer": "S: Product requested a complex analytics dashboard in 3 days. T: Manage expectations. A: Presented a data-driven breakdown of why it would take 7 days and suggested an MVP. R: Stakeholders agreed to the 2-phase rollout."
+    },
+    {
+      "behavioralQuestion": "Tell me about your experience working in an Agile/Scrum environment.",
+      "intention": "Check cultural fit for the startup environment.",
+      "answer": "At Infosys, we used 2-week sprints with daily standups. I actively participated in sprint planning and retrospectives to identify process bottlenecks."
+    },
+    {
+      "behavioralQuestion": "What is your approach to learning a new technology, like Kubernetes, which you haven't used deeply yet?",
+      "intention": "Assess self-driven learning ability.",
+      "answer": "I build a small proof-of-concept project. Currently, I am setting up a local Minikube cluster to understand pod orchestration and service networking."
+    }
+  ],
+  "skillGaps": [
+    {
+      "skill": "Kubernetes",
+      "severity": "high"
+    },
+    {
+      "skill": "High-traffic transaction handling (Millions/day)",
+      "severity": "high"
+    },
+    {
+      "skill": "Microservices Architecture",
+      "severity": "medium"
+    },
+    {
+      "skill": "gRPC",
+      "severity": "low"
+    },
+    {
+      "skill": "Advanced AWS (Lambda/Kinesis)",
+      "severity": "low"
+    }
+  ],
+  "preparationPlan": [
+    {
+      "day": 1,
+      "focusArea": "System Design for Payments",
+      "tasks": [
+        "Study Distributed Transactions and Saga Pattern",
+        "Learn about Idempotency and Transactional Outbox pattern",
+        "Design a scalable wallet system"
+      ]
+    },
+    {
+      "day": 2,
+      "focusArea": "Microservices & gRPC",
+      "tasks": [
+        "Learn Protobuf basics",
+        "Compare REST vs gRPC performance",
+        "Study service discovery patterns"
+      ]
+    },
+    {
+      "day": 3,
+      "focusArea": "DevOps & Kubernetes",
+      "tasks": [
+        "Learn K8s Pods, Services, and Deployments",
+        "Practice containerizing a Node.js microservice",
+        "Study Helm charts basics"
+      ]
+    },
+    {
+      "day": 4,
+      "focusArea": "Database Deep Dive",
+      "tasks": [
+        "PostgreSQL isolation levels",
+        "Database sharding and partitioning strategies",
+        "Review MongoDB aggregation for analytics"
+      ]
+    },
+    {
+      "day": 5,
+      "focusArea": "Security Compliance",
+      "tasks": [
+        "Research PCI-DSS compliance basics",
+        "Study OAuth2.0 Authorization Code flow",
+        "Practice implementing rate limiting in Express"
+      ]
+    },
+    {
+      "day": 6,
+      "focusArea": "Node.js Performance Tuning",
+      "tasks": [
+        "Profile a Node.js app for memory leaks",
+        "Study Event Loop phases in depth",
+        "Review Worker Threads for CPU intensive tasks"
+      ]
+    },
+    {
+      "day": 7,
+      "focusArea": "Leadership & Behavioral",
+      "tasks": [
+        "Refine 'Situation-Action-Result' stories for leadership",
+        "Practice explaining technical decisions to non-tech stakeholders",
+        "Review previous project architecture diagrams"
+      ]
+    }
+  ]
+}
