@@ -2,6 +2,7 @@ import { useEffect } from "react"
 import { useNavigate } from "react-router-dom"
 import { useInterview } from "../Hooks/userInterview"
 import {useAuth} from '../Hooks/Use.Authcontext.js'
+import Loading from "./Loading.jsx"
 
 const severityColor = {
   high:   "bg-red-500/10 text-red-400 border-red-500/30",
@@ -25,9 +26,7 @@ export default function History() {
   }, [])
 
   if (!reports) return (
-    <div className="min-h-screen bg-[#0a0a0f] flex items-center justify-center">
-      <p className="text-gray-500 text-sm animate-pulse">Loading reports...</p>
-    </div>
+   <Loading/>
   )
 
   return (

@@ -6,7 +6,7 @@ const ai = new GoogleGenAI({
   apiKey: process.env.GEMINI_API_KEY
 });
 
-/* ---------- YOUR ZOD SCHEMA (unchanged) ---------- */
+/* ---------- ZOD SCHEMA  ---------- */
 const interviewReportSchema = z.object({
   matchScore: z.number().min(0).max(100)
     .describe("A score between 0 and 100 indicating how well the candidate profile matches the job requirements"),
